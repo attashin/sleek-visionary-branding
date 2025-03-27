@@ -10,31 +10,31 @@ const testimonials = [
     name: "Rezwan Rafid",
     role: "CEO, TechNova",
     content: "Working with Tashin and his team has been transformative for our brand. Their strategic approach to digital marketing helped us increase our customer base by 40% in just three months.",
-    image: "/lovable-uploads/d50f74e0-d14b-423d-8747-dfcf3fec72d2.png"
+    image: "/lovable-uploads/c8de633b-c1a5-46ba-9ed4-b72b83af2386.png"
   },
   {
     name: "Nurun Nabi",
     role: "Founder, GrowthLabs",
     content: "Tashin has a remarkable ability to understand business needs and translate them into effective branding solutions. Their work on our website redesign exceeded our expectations.",
-    image: "/lovable-uploads/e75be243-854e-48de-b137-95c2877d3f92.png"
+    image: "/lovable-uploads/1ad4115d-1134-40d2-846a-c50ff69ceb1b.png"
   },
   {
     name: "Jahid Ahamed",
     role: "Marketing Director, FutureScale",
     content: "I've worked with many agencies, but Developito stands out for their professionalism and results-driven approach. They don't just deliver projects; they become partners in your success.",
-    image: "/lovable-uploads/c1c8a93e-1744-4eba-a12c-f4445920864a.png"
+    image: "/lovable-uploads/f3a26b79-21b5-42d6-92a3-b76e77decf7f.png"
   },
   {
     name: "Castaneda",
     role: "Startup Founder",
     content: "Tashin brought fresh perspectives to our branding challenges. Their team's creativity and technical expertise helped us establish a distinctive identity in a crowded market.",
-    image: "/lovable-uploads/562387ec-49aa-4fdd-8348-18128edd4b7f.png"
+    image: "/lovable-uploads/1049ca0d-ce7b-4817-a0fb-cbd54a7e02be.png"
   },
   {
     name: "Caven Harbid",
     role: "E-commerce Entrepreneur",
     content: "The attention to detail and strategic thinking that Tashin and his team bring to every project is impressive. They've helped us build a brand that truly resonates with our audience.",
-    image: "/lovable-uploads/0f7f41db-658f-4634-ab11-54e8170cf4f0.png"
+    image: "/lovable-uploads/60754646-6ba3-43cd-b700-b154bbee643a.png"
   }
 ];
 
