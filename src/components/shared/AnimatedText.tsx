@@ -17,7 +17,8 @@ export default function AnimatedText({
   tag = "h1",
   delay = 0,
 }: AnimatedTextProps) {
-  const elementRef = useRef<HTMLElement>(null);
+  // Use a generic type parameter for useRef that matches the possible HTML elements
+  const elementRef = useRef<HTMLHeadingElement | HTMLParagraphElement | HTMLSpanElement>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -49,14 +50,13 @@ export default function AnimatedText({
     };
   }, [once, delay]);
 
-  const TagName = tag;
-
-  return (
-    <TagName
-      ref={elementRef}
-      className={cn("animate-on-scroll", className)}
-    >
-      {text}
-    </TagName>
+  // Use React.createElement instead of JSX to handle dynamic tag with correct typing
+  return React.createElement(
+    tag,
+    {
+      ref: elementRef,
+      className: cn("animate-on-scroll", className)
+    },
+    text
   );
 }
