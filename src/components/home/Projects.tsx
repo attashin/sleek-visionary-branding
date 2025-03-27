@@ -10,28 +10,32 @@ const categories = ["All", "Branding", "Web Design", "Marketing", "Strategy"];
 
 const projects = [
   {
-    title: "E-Commerce Brand Refresh",
-    category: "Branding",
-    description: "Complete brand identity redesign for an established e-commerce platform.",
-    image: "/lovable-uploads/0ded62d4-a577-4896-933a-46a149ee5d31.png"
-  },
-  {
-    title: "SaaS Marketing Strategy",
-    category: "Marketing",
-    description: "Comprehensive marketing plan for a B2B SaaS startup targeting enterprise clients.",
-    image: "/lovable-uploads/e7136e3c-633b-45e0-b580-039851cc864d.png"
-  },
-  {
-    title: "Fintech Website Design",
+    title: "MechaVerse - E-Commerce",
     category: "Web Design",
-    description: "Modern, conversion-focused website for an innovative fintech company.",
-    image: "/lovable-uploads/88927b70-8a59-49cc-8c5d-eaa1e6f72d46.png"
+    description: "Premium mechanical keyboard products with responsive interface design.",
+    image: "/lovable-uploads/f8d6d39d-69d5-452a-bebb-271636d6195e.png",
+    url: "mechaversebd.com"
   },
   {
-    title: "Retail Growth Strategy",
-    category: "Strategy",
-    description: "Market expansion strategy for a retail brand entering new international markets.",
-    image: "/lovable-uploads/6f47fe69-5e5e-4b96-a7da-b79583f05c06.png"
+    title: "GrooveLand - Music Platform",
+    category: "Branding",
+    description: "Complete branding and website for a music career platform.",
+    image: "/lovable-uploads/73f1de28-f063-49cf-9dae-c832ef7e2b97.png",
+    url: "www.thegrooveland.com"
+  },
+  {
+    title: "MintHost - Hosting Solution",
+    category: "Web Design",
+    description: "Fresh and reliable web hosting solution with modern UI design.",
+    image: "/lovable-uploads/e3ba38f5-ab7c-4e36-a69a-41bd0d9373f5.png",
+    url: "www.minthost.com.bd"
+  },
+  {
+    title: "Dezzify - Branding Project",
+    category: "Branding",
+    description: "Minimalist branding with strong visual identity.",
+    image: "/lovable-uploads/e9354491-771e-4254-8f0d-5ac4d4bc40b4.png",
+    url: "dezzify.com"
   }
 ];
 
@@ -104,7 +108,8 @@ export default function Projects() {
                     {project.category}
                   </span>
                 </div>
-                <p className="text-muted-foreground mb-4">{project.description}</p>
+                <p className="text-muted-foreground mb-2">{project.description}</p>
+                <p className="text-sm text-primary mb-4">{project.url}</p>
                 <Button variant="ghost" className="p-0 h-auto text-primary" asChild>
                   <Link to="/projects">
                     View Details
