@@ -44,34 +44,6 @@ const stats = [
   { value: "3+", label: "Years of Experience" }
 ];
 
-// Define our clients with the new images
-const clients = [
-  {
-    name: "Client 1",
-    image: "/lovable-uploads/c8de633b-c1a5-46ba-9ed4-b72b83af2386.png"
-  },
-  {
-    name: "Client 2",
-    image: "/lovable-uploads/1ad4115d-1134-40d2-846a-c50ff69ceb1b.png"
-  },
-  {
-    name: "Client 3",
-    image: "/lovable-uploads/f3a26b79-21b5-42d6-92a3-b76e77decf7f.png"
-  },
-  {
-    name: "Client 4",
-    image: "/lovable-uploads/1049ca0d-ce7b-4817-a0fb-cbd54a7e02be.png"
-  },
-  {
-    name: "Client 5",
-    image: "/lovable-uploads/60754646-6ba3-43cd-b700-b154bbee643a.png"
-  },
-  {
-    name: "Client 6",
-    image: "/lovable-uploads/4e6fbcb6-4034-4f51-b0fe-e184689f8a6a.png"
-  }
-];
-
 export default function Projects() {
   return (
     <section id="projects" className="section-padding">
@@ -129,30 +101,6 @@ export default function Projects() {
               <ArrowRight className="ml-2 h-4 w-4" />
             </Link>
           </Button>
-        </div>
-
-        {/* Client Section */}
-        <div className="mt-24 mb-16">
-          <h3 className="text-2xl md:text-3xl font-display font-bold text-center mb-12">
-            Our Clients
-          </h3>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
-            {clients.map((client, index) => (
-              <div 
-                key={index} 
-                className="flex items-center justify-center animate-on-scroll"
-                style={{ animationDelay: `${index * 100}ms` }}
-              >
-                <div className="w-24 h-24 md:w-28 md:h-28 rounded-full overflow-hidden border-2 border-primary/20">
-                  <img 
-                    src={client.image} 
-                    alt={client.name} 
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
-            ))}
-          </div>
         </div>
         
         <div className="mt-24 bg-muted/30 rounded-2xl p-8 md:p-12">
