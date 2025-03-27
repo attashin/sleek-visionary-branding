@@ -5,9 +5,6 @@ import AnimatedText from "@/components/shared/AnimatedText";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
-import { cn } from "@/lib/utils";
-
-const categories = ["All", "Branding", "Web Design", "Marketing", "Strategy"];
 
 const projects = [
   {
@@ -93,12 +90,6 @@ const projects = [
 ];
 
 const ProjectsPage = () => {
-  const [activeCategory, setActiveCategory] = useState("All");
-  
-  const filteredProjects = activeCategory === "All" 
-    ? projects 
-    : projects.filter(project => project.category === activeCategory);
-
   return (
     <Layout>
       <section className="pt-32 md:pt-40 pb-16">
@@ -120,28 +111,9 @@ const ProjectsPage = () => {
               Explore our portfolio of successful brand transformations and digital projects.
             </p>
           </div>
-
-          <div className="flex flex-wrap gap-2 mb-12">
-            {categories.map(category => (
-              <Button
-                key={category}
-                variant={activeCategory === category ? "default" : "ghost"}
-                size="sm"
-                onClick={() => setActiveCategory(category)}
-                className={cn(
-                  "rounded-full",
-                  activeCategory === category 
-                    ? "" 
-                    : "text-muted-foreground"
-                )}
-              >
-                {category}
-              </Button>
-            ))}
-          </div>
           
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {filteredProjects.map((project, index) => (
+            {projects.map((project, index) => (
               <div 
                 key={project.title}
                 className="group overflow-hidden rounded-xl border bg-card shadow-sm hover:shadow-md transition-all animate-on-scroll"
